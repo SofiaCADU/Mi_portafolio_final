@@ -1,0 +1,152 @@
+/* Inicio general */
+*{
+    background-color: rgb(6, 33, 52);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+
+.col-1,
+.col-2,
+.col-3{
+    flex: 1;
+    margin: 10px;
+}
+.col-2{
+    flex: 2;
+}
+.col-3{
+    flex: 3;
+}
+
+/* Fin general */
+
+/* Inicio barra de navegación */
+.Navegacion{
+    height: 40px;
+    width: 1200px;
+    background-color: rgb(6, 33, 52);
+    margin: 0 auto;
+}
+
+.Texto-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.color{
+    padding-left: 30px;
+    color: white;
+}
+
+.nav{
+    text-decoration: none;
+    padding-left: 35px;
+    color: white;
+}
+
+.JC{
+    padding-right: 50px;
+    font-family: sans-serif;
+}
+
+.sky-blue{
+    text-decoration: none;
+    color: rgb(29, 152, 229);
+}
+/* Fin barra de navegacion */
+
+/* Inicion imagen */
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.IM{
+    margin: 20px;
+    width: 1200px;
+}
+/* Fin imagen */
+
+/* Inicio informacion */
+.icon-xs{
+    width: 30px;
+}
+
+.block{
+    margin: 10px;
+    background-color: white;
+}
+
+.color-block{
+    padding: 10px;
+    background-color: rgb(20, 104, 168);
+}
+
+.color-textB{
+    color: white;
+}
+
+.CB{
+    background-color: rgb(20, 104, 168);
+}
+
+.CB-T{
+    background-color: rgb(20, 104, 168);
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.padding{
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+.white{
+    background-color: white;
+    padding: 10px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.but{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(25,145,221);
+    background: linear-gradient(0deg, rgba(25,145,221,1) 45%, rgba(85,179,238,1) 55%);
+}
+
+.CW{
+    background-color: white;
+}
+.CW-T{
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.IM-2{
+    width: 290px;
+    margin-left: 10px;
+}
+
+.xx{
+    background-color: rgb(218, 237, 254);
+    padding: 20px;
+}
+
+.C{
+    background-color: white;
+}
+
+.center{
+    color: white;
+    height: 40px;
+    width: 1200px;
+    text-align: center;
+    padding-top: 10px;
+}

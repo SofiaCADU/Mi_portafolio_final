@@ -1,0 +1,621 @@
+.main {
+  background-image: url(imagenes/FondoR.jfif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Inicio Barra de navegacion */
+.C1{
+  background-color: #84a98c ;
+}
+/* Fin Barra de navegacion */
+
+/* Inicio presentacio */
+.Centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.usuario {
+  width: 200px;
+}
+
+.Principio {
+  margin: 10px;
+  background-color: #000000;
+  display: inline-flex;
+  color: #d2e6e7;
+  border-radius: 10px 30px 60px 120px;
+}
+
+.Nombre {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/* Fin presentacio */
+
+/* Inicio informacion */
+
+.C-T {
+  background-color: #bac5a5;
+  text-align: center;
+}
+
+.Info {
+  background-color: #c0cfb2;
+  padding: 30px;
+  width: 600px;
+  text-align: center;
+  border: #6c8776 4px solid;
+  border-radius: 20px;
+}
+
+.Centro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Pipo {
+  width: 200px;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.color{
+  border: #84a98c solid 10px;
+}
+
+.t{
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.Yo {
+  background-color: #8d8d8d;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.C-T-h {
+  background-color: #c0cfb2;
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  border: #6c8776 4px solid;
+  margin: 0 auto;
+}
+
+.B {
+  background-color: #e4e6d9;
+  border: #273526 solid 1px;
+}
+
+.bor {
+  border: #273526 solid 1px;
+}
+
+.P{
+  padding-left: 5px;
+}
+
+.p {
+  padding-right: 10px;
+}
+
+/* Inicio gustos musicales */
+.IC{
+  width: 160px;
+  height: 208px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.Container {
+  width: 207px;
+  height: 255px;
+  position: relative;
+  margin: 0 auto 40px;
+  border: 1px solid #CCC;
+  perspective: 1100px;
+}
+
+#carousel {
+  animation: rotateInY 10s infinite linear;
+}
+@keyframes rotateInY {
+0%   { transform: translateZ(-288px) rotateY(0deg);   }
+100% { transform: translateZ(-288px) rotateY(360deg);    }
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+          transform: translateZ( -288px );
+          transform-style: preserve-3d;
+          transition: transform 1s;
+}
+
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10px;
+  top: 10px;
+  border: 2px solid rgba(   0, 0, 0, 0.8 );
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#carousel figure:nth-child(1) {
+  transform: rotateY( 0deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(2) {
+  transform: rotateY( 40deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(3) {
+  transform: rotateY( 80deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(4) {
+  transform: rotateY( 120deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(5) {
+  transform: rotateY( 160deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(6) {
+  transform: rotateY( 200deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(7) {
+  transform: rotateY( 240deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(8) {
+  transform: rotateY( 280deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(9) {
+  transform: rotateY( 320deg ) translateZ( 288px );
+}
+#carousel figure:nth-child(10) {
+  transform: rotateY( 360deg ) translateZ( 288px );
+}
+
+/* Fin gustos musicales */
+
+/* Fin informacion */
+
+/* Inicio habilidadea */
+.L{
+  color: #6c8776;
+}
+
+.L:hover{
+  color: #273526;
+}
+
+.lugar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Inicio hamnter */
+.wheel-and-hamster {
+  --dur: 1s;
+  position: relative;
+  width: 12em;
+  height: 12em;
+  font-size: 14px;
+}
+
+.wheel,
+.hamster,
+.hamster div,
+.spoke {
+  position: absolute;
+}
+
+.wheel,
+.spoke {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wheel {
+  background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
+  z-index: 2;
+}
+
+.hamster {
+  animation: hamster var(--dur) ease-in-out infinite;
+  top: 50%;
+  left: calc(50% - 3.5em);
+  width: 7em;
+  height: 3.75em;
+  transform: rotate(4deg) translate(-0.8em,1.85em);
+  transform-origin: 50% 0;
+  z-index: 1;
+}
+
+.hamster__head {
+  animation: hamsterHead var(--dur) ease-in-out infinite;
+  background: hsl(30,90%,55%);
+  border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
+  box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
+		0.75em -1.55em 0 hsl(30,90%,90%) inset;
+  top: 0;
+  left: -2em;
+  width: 2.75em;
+  height: 2.5em;
+  transform-origin: 100% 50%;
+}
+
+.hamster__ear {
+  animation: hamsterEar var(--dur) ease-in-out infinite;
+  background: hsl(0,90%,85%);
+  border-radius: 50%;
+  box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
+  top: -0.25em;
+  right: -0.25em;
+  width: 0.75em;
+  height: 0.75em;
+  transform-origin: 50% 75%;
+}
+
+.hamster__eye {
+  animation: hamsterEye var(--dur) linear infinite;
+  background-color: hsl(0,0%,0%);
+  border-radius: 50%;
+  top: 0.375em;
+  left: 1.25em;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.hamster__nose {
+  background: hsl(0,90%,75%);
+  border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
+  top: 0.75em;
+  left: 0;
+  width: 0.2em;
+  height: 0.25em;
+}
+
+.hamster__body {
+  animation: hamsterBody var(--dur) ease-in-out infinite;
+  background: hsl(30,90%,90%);
+  border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
+  box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
+		0.15em -0.5em 0 hsl(30,90%,80%) inset;
+  top: 0.25em;
+  left: 2em;
+  width: 4.5em;
+  height: 3em;
+  transform-origin: 17% 50%;
+  transform-style: preserve-3d;
+}
+
+.hamster__limb--fr,
+.hamster__limb--fl {
+  clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
+  top: 2em;
+  left: 0.5em;
+  width: 1em;
+  height: 1.5em;
+  transform-origin: 50% 0;
+}
+
+.hamster__limb--fr {
+  animation: hamsterFRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
+  transform: rotate(15deg) translateZ(-1px);
+}
+
+.hamster__limb--fl {
+  animation: hamsterFLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
+  transform: rotate(15deg);
+}
+
+.hamster__limb--br,
+.hamster__limb--bl {
+  border-radius: 0.75em 0.75em 0 0;
+  clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
+  top: 1em;
+  left: 2.8em;
+  width: 1.5em;
+  height: 2.5em;
+  transform-origin: 50% 30%;
+}
+
+.hamster__limb--br {
+  animation: hamsterBRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
+  transform: rotate(-25deg) translateZ(-1px);
+}
+
+.hamster__limb--bl {
+  animation: hamsterBLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
+  transform: rotate(-25deg);
+}
+
+.hamster__tail {
+  animation: hamsterTail var(--dur) linear infinite;
+  background: hsl(0,90%,85%);
+  border-radius: 0.25em 50% 50% 0.25em;
+  box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
+  top: 1.5em;
+  right: -0.5em;
+  width: 1em;
+  height: 0.5em;
+  transform: rotate(30deg) translateZ(-1px);
+  transform-origin: 0.25em 0.25em;
+}
+
+.spoke {
+  animation: spoke var(--dur) linear infinite;
+  background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
+		linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
+}
+
+/* Animations */
+@keyframes hamster {
+  from, to {
+    transform: rotate(4deg) translate(-0.8em,1.85em);
+  }
+
+  50% {
+    transform: rotate(0) translate(-0.8em,1.85em);
+  }
+}
+
+@keyframes hamsterHead {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes hamsterEye {
+  from, 90%, to {
+    transform: scaleY(1);
+  }
+
+  95% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes hamsterEar {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes hamsterBody {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(0);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes hamsterFRLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(50deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-30deg) translateZ(-1px);
+  }
+}
+
+@keyframes hamsterFLLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(-30deg);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes hamsterBRLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(-60deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(20deg) translateZ(-1px);
+  }
+}
+
+@keyframes hamsterBLLimb {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(20deg);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes hamsterTail {
+  from, 25%, 50%, 75%, to {
+    transform: rotate(30deg) translateZ(-1px);
+  }
+
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: rotate(10deg) translateZ(-1px);
+  }
+}
+
+@keyframes spoke {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-1turn);
+  }
+}
+/* Fin hamnter */
+/* Fin habilidades */
+
+/* Inicio Mis aspiraciones a futuro son: */
+.C {
+  text-align: center;
+}
+
+/* Fin Mis aspiraciones a futuro son: */
+
+/* Inicio formulario */
+.title{
+  color: #273526;
+}
+
+.ancho{
+  margin: 0 auto;
+  width: 800px;
+}
+
+.container {
+  max-width: 350px;
+  background: #F8F9FD;
+  background: linear-gradient(0deg, #a9b69d 0%, #c0cfb2 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: #6c8776 5px solid ;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: #354f52;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form .input {
+  width: 100%;
+  background: #cad2c5;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #2f3e46 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+  outline: none;
+  border-inline: 2px solid #cad2c5;
+}
+
+.form .login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg, #52796f 0%, #52796f 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: #2f3e46 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: #354f52 0px 23px 10px -20px;
+}
+
+.form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: #2f3e46 0px 15px 10px -10px;
+}
+
+.social-account-container {
+  margin-top: 25px;
+}
+
+.social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #2f3e46;
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: linear-gradient(45deg, #52796f 0%, #84a98c 100%);
+  border: 4px solid #032221;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: #2f3e46 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+  fill: rgb(85, 48, 48);
+  margin: auto;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.2);
+}
+
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+/* Final formulario */
